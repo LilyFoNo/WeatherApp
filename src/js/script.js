@@ -812,9 +812,9 @@ function updateThreeHourRange(dayIndex) {
     const sunsetTime = new Date(weatherData.daily.sunset[dayIndex]);
 
     if (slotTime >= sunriseTime && slotTime < sunsetTime) {
-      imgElement.innerHTML = '<img src="img/sun.png" alt="Sun">';
+      imgElement.innerHTML = '<img src="src/img/sun.png" alt="Sun">';
     } else {
-      imgElement.innerHTML = '<img src="img/moon.png" alt="Moon">';
+      imgElement.innerHTML = '<img src="src/img/moon.png" alt="Moon">';
     }
 
     // Show the hour in the right element 
@@ -826,59 +826,59 @@ function updateThreeHourRange(dayIndex) {
 function getCodeWeather(value) {
   switch (value) {
     case 0:
-      var image = "img/sun.png";
+      var image = "src/img/sun.png";
       break;
     case 1:
     case 2:
     case 3:
-      var image = "img/mainlyClear.png";
+      var image = "src/img/mainlyClear.png";
       break;
     case 45:
     case 48:
-      var image = "img/Fog.png";
+      var image = "src/img/Fog.png";
       break;
     case 51:
     case 53:
     case 55:
-      var image = "img/drizzle.png";
+      var image = "src/img/drizzle.png";
       break;
     case 56:
     case 57:
-      var image = "img/Frezzingdrizzle.png";
+      var image = "src/img/Frezzingdrizzle.png";
       break;
     case 61:
     case 63:
     case 65:
-      var image = "img/Rain.png";
+      var image = "src/img/Rain.png";
       break;
     case 66:
     case 67:
-      var image = "img/rainy-shower.png";
+      var image = "src/img/rainy-shower.png";
       break;
     case 71:
     case 73:
     case 75:
-      var image = "img/snowfall.png";
+      var image = "src/img/snowfall.png";
       break;
     case 77:
-      var image = "img/snowgrain.png";
+      var image = "src/img/snowgrain.png";
       break;
     case 80:
     case 81:
     case 82:
-      var image = "img/rainy-shower.png";
+      var image = "src/img/rainy-shower.png";
       break;
     case 85:
     case 86:
-      var image = "img/snowshower.png";
+      var image = "src/img/snowshower.png";
       break;
     case 95:
     case 96:
     case 99:
-      var image = "img/storm.png";
+      var image = "src/img/storm.png";
       break;
     default:
-      var image = "img/sun.png";
+      var image = "src/img/sun.png";
       break;
   }
   let finalObject = {
@@ -890,14 +890,14 @@ function getCodeWeather(value) {
 function background(value) {
   switch (value) {
     case 0:
-      var image = "img/sunnyDay.jpg";
+      var image = "src/img/sunnyDay.jpg";
       break;
     case 1:
     case 2:
     case 3:
     case 45:
     case 48:
-      var image = "img/cloudyDay.jpg";
+      var image = "src/img/cloudyDay.jpg";
       break;
     case 51:
     case 53:
@@ -909,30 +909,30 @@ function background(value) {
     case 65:
     case 66:
     case 67:
-      var image = "img/rainyDay.jpg";
+      var image = "src/img/rainyDay.jpg";
       break;
     case 71:
     case 73:
     case 75:
     case 77:
-      var image = "img/snowyDay.jpg";
+      var image = "src/img/snowyDay.jpg";
       break;
     case 80:
     case 81:
     case 82:
-      var image = "img/rainyDay.jpg";
+      var image = "src/img/rainyDay.jpg";
       break;
     case 85:
     case 86:
-      var image = "img/snowyDay.jpg";
+      var image = "src/img/snowyDay.jpg";
       break;
     case 95:
     case 96:
     case 99:
-      var image = "img/rainyDay.jpg";
+      var image = "src/img/rainyDay.jpg";
       break;
     default:
-      var image = "img/sunnyDay.jpg";
+      var image = "src/img/sunnyDay.jpg";
       break;
   }
   let url = {
